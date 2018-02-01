@@ -43,10 +43,10 @@ public class JmxClient {
         System.out.println("\n■■■■■");
         
         while(true) {
-        	System.out.println("1. BytesInPerSec Count : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec"), "Count")
-        	                   + ", MeanRate : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec"), "MeanRate"));
-        	System.out.println("2. BytesOutPerSec Count : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=BytesOutPerSec"), "Count")
-                               + ", MeanRate : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=BytesOutPerSec"), "MeanRate"));
+        	System.out.println("\n1. BytesInPerSec Count : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec,topic=zero"), "Count")
+        	                   + ", MeanRate : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec,topic=zero"), "MeanRate"));
+        	System.out.println("2. BytesOutPerSec Count : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=BytesOutPerSec,topic=zero"), "Count")
+                               + ", MeanRate : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=BytesOutPerSec,topic=zero"), "MeanRate"));
         	System.out.println("3. TotalProduceRequestsPerSec Count : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=TotalProduceRequestsPerSec,topic=zero"), "Count"));
         	System.out.println("4. TotalFetchRequestsPerSec Count : " + mbsc.getAttribute(new ObjectName("kafka.server:type=BrokerTopicMetrics,name=TotalFetchRequestsPerSec,topic=zero"), "Count"));
         	Thread.sleep(1000);
