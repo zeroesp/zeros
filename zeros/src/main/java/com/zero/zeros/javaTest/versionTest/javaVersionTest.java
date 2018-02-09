@@ -29,7 +29,7 @@ public class javaVersionTest {
 		//default 메소드 - 하위 호환성 때문, 인터페이스에 새로운 메소드 추가 시 사용. 구현된 메소드 
 
 		// stream
-		List ar = new ArrayList();
+		List<Integer> ar = new ArrayList<>();
 		ar.add(1);
 		ar.add(2);
 		ar.add(3);
