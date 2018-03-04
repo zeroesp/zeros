@@ -75,8 +75,7 @@ public class ParserTest {
     JsonParser parser = new JsonParser();
     JsonArray jsonArray = parser.parse(json).getAsJsonArray();
     // Gson gson = new Gson();
-    // List<HashMap<String,String>> list1 = gson.fromJson(jsonArray, new
-    // TypeToken<List<HashMap<String,String>>>(){}.getType());
+    // List<HashMap<String,String>> list1 = gson.fromJson(jsonArray, new TypeToken<List<HashMap<String,String>>>(){}.getType());
     // List<String> list2 = gson.fromJson(jsonArray, new TypeToken<List<String>>(){}.getType());
 
     HashMap<String, Object> result = new HashMap<String, Object>();
