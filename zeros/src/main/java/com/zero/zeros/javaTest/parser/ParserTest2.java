@@ -50,7 +50,7 @@ public class ParserTest2 {
     System.out.println(resultMap);
   }
   
-//streaming data/컬럼정보로(columnList) formmated Data 조회
+//streaming data/컬럼정보로(columnList) formmated Data 조회  (dataFormat : parse에서 return된 실제 dataFormat)
   public static HashMap<String, Object> formattedData(String str, String delimiter, String dataFormat, ArrayList<HashMap<String, String>> columnList){
     //result
     HashMap<String, Object> result = new HashMap<String, Object>();
