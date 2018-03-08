@@ -13,16 +13,18 @@ public class ParserTest2 {
   public static void main(String[] args) {
     String none = "[\"1aa11.1b\",\"2bb22.2c\",\"3cc33.3d\"]";
     String csv = "[\"1,aa,11.1,b\",\"2,bb,22.2,c,5\",\"3,cc,33.3,d\"]";
+    String csv2 = "[\"1!aa!11.1!b\",\"2!bb!22.2!c!5\",\"3!cc!33.3!d\"]";
     String json = "[{\"name\":\"aa\",\"age\":20,\"gender\":\"male\"},{\"name\":\"bb\",\"age\":21,\"gender\":\"female\"},{\"name\":\"cc\",\"age\":22,\"gender\":\"male\"}]";
     String trash = "[{\"name\":\"aa\",\"age\":20,\"gender\":\"male\"},\"1aa11.1b\",{\"name\":\"cc\",\"age\":22,\"gender\":\"male\"}]";
     String trash2 = "[\"1,aa,11.1,b\",{\"name\":\"aa\",\"age\":20,\"gender\":\"male\"},\"3,cc,33.3,d\"]";
 
-    String inputData = json;
-    String inputFormat = "json";
+    String inputData = csv2;
+    String inputFormat = "csv";
+    String delimiter = "!";
     System.out.println(inputData);
     
     HashMap<String, Object> resultMap = new HashMap<String, Object>();
-    resultMap = parse(inputData,inputFormat);
+    resultMap = parse(inputData, delimiter);
     
     /*
     if(inputFormat.equals("csv")) {
@@ -42,15 +44,14 @@ public class ParserTest2 {
     */
     
     System.out.println(resultMap);
-    
-    if(resultMap.get("status").equals("success")){
-      resultMap = formattedData(inputData, inputFormat, (ArrayList)resultMap.get("columnList"));
+    if(resultMap.get("statusCode") != null && resultMap.get("statusCode").equals(200)){
+      resultMap = formattedData(inputData, delimiter, inputFormat, (ArrayList)resultMap.get("columnList"));
     }
     System.out.println(resultMap);
   }
   
-  //streaming data/컬럼정보로(columnList) formmated Data 조회
-  public static HashMap<String, Object> formattedData(String str, String dataFormat, ArrayList<HashMap<String, String>> columnList){
+//streaming data/컬럼정보로(columnList) formmated Data 조회
+  public static HashMap<String, Object> formattedData(String str, String delimiter, String dataFormat, ArrayList<HashMap<String, String>> columnList){
     //result
     HashMap<String, Object> result = new HashMap<String, Object>();
     //raw데이터를 테이블 형태로 변환
@@ -64,78 +65,82 @@ public class ParserTest2 {
           JsonObject jsonObj = element.getAsJsonObject();
           for (HashMap<String, String> keyMap : columnList) {
             if(jsonObj.has(keyMap.get("column"))) formattedData.put(keyMap.get("column"), jsonObj.get(keyMap.get("column")).getAsString());
+            else formattedData.put(keyMap.get("column"), "");
           }
           formattedList.add(formattedData);
         }
       }else if(dataFormat.equals("csv")) {
+        if("".equals(delimiter) || delimiter == null) delimiter = ",";
         for (JsonElement element : jsonArray) {
           //각 row의 데이터
           HashMap<String, String> formattedData = new HashMap<String, String>();
-          String[] eachColData = element.getAsString().split(",");
-          for (int num = 0; num < eachColData.length; num++) {
-            if(columnList.size() > num) formattedData.put(columnList.get(num).get("column"), eachColData[num]);
-            else break;
+          String[] eachColData = element.getAsString().split(delimiter);
+          for (int num = 0; num < columnList.size(); num++) {
+            if(eachColData.length > num) formattedData.put(columnList.get(num).get("column"), eachColData[num]);
+            else formattedData.put(columnList.get(num).get("column"), "");
           }
           formattedList.add(formattedData);
         }
       }
-      result.put("status", "success");
-      result.put("message", "formatted data 조회 완료");
+      result.put("statusCode", 200);
+      result.put("message", "data 조회 완료");
       result.put("formattedList", formattedList);
     }catch(Exception e) {
-      result.put("status", "fail");
+      result.put("statusCode", 400);
       result.put("message", "데이터 타입을 알 수 없습니다.");
     }
     return result;
   }
   
   //str : jsonArray string, format : json/csv
-  public static HashMap<String, Object> parse(String str, String format) {
+  public static HashMap<String, Object> parse(String str, String delimiter) {
     //result
     HashMap<String, Object> result = new HashMap<String, Object>();
 
     try {
       JsonArray jsonArray = new JsonParser().parse(str).getAsJsonArray();
-      // json/csv 형식인지 아닌지
-      String dataFormat = checkDataFormat(jsonArray);
+      if("".equals(delimiter) || delimiter == null) delimiter = ",";
       
-      if(!dataFormat.equals("none") && dataFormat.equals(format)) {
-        ArrayList<HashMap<String, String>> columnList = new ArrayList<HashMap<String, String>>();
-        columnList = getCloumnNames(jsonArray, dataFormat);
-        result.put("status", "success");
+      // json/csv 형식인지 아닌지
+      String dataFormat = checkDataFormat(jsonArray, delimiter);
+      
+      if(!dataFormat.equals("unknown")) { // && dataFormat.equals(format)
+        result.put("statusCode", 200);
         result.put("message", "자동 파싱 완료");
-        result.put("columnList", columnList);
+        result.put("columnList", getCloumnNames(jsonArray, dataFormat, delimiter));
+        result.put("dataFormat", dataFormat);
       }else {
-        result.put("status", "fail");
-        result.put("message", format + "타입의 데이터가 아닙니다.");
+        result.put("statusCode", 400);
+        result.put("message", "데이터 타입을 알 수 없습니다.");
+        result.put("dataFormat", dataFormat);
       }
     }catch(Exception e) {
-      result.put("status", "fail");
+      result.put("statusCode", 400);
       result.put("message", "데이터 타입을 알 수 없습니다.");
     }
     return result;
   }
   
   //전체 data format 체크
-  private static String checkDataFormat(JsonArray jsonArray) {
-    String dataFormat = "none";
+  private static String checkDataFormat(JsonArray jsonArray, String delimiter) {
+    String dataFormat = "unknown";
     for (JsonElement element : jsonArray) {
       if (element.isJsonObject()) {
-        if (dataFormat.equals("json") || dataFormat.equals("none")) {
+        if (dataFormat.equals("json") || dataFormat.equals("unknown")) {
           dataFormat = "json";
         } else {
-          dataFormat = "none";
+          dataFormat = "unknown";
           break;
         }
-      } else if(element.getAsString().contains(",")){
-        if (dataFormat.equals("csv") || dataFormat.equals("none")) {
+      } else if(element.getAsString().contains(delimiter)){
+        if (dataFormat.equals("csv") || dataFormat.equals("unknown")) {
           dataFormat = "csv";
         } else {
-          dataFormat = "none";
+          dataFormat = "unknown";
           break;
         }
       } else {
-        dataFormat = "none";
+        dataFormat = "unknown";
         break;
       }
     }
@@ -143,7 +148,7 @@ public class ParserTest2 {
   }
   
   //데이터의 컬럼명/데이터타입 리스트 반환
-  private static ArrayList<HashMap<String, String>> getCloumnNames(JsonArray jsonArray, String dataFormat){
+  private static ArrayList<HashMap<String, String>> getCloumnNames(JsonArray jsonArray, String dataFormat, String delimiter){
     // 컬럼의 데이터 타입
     LinkedHashMap<String, String> columnDataType = new LinkedHashMap<String, String>();
     if(dataFormat.equals("json")) {
@@ -155,13 +160,12 @@ public class ParserTest2 {
       }      
     }else if(dataFormat.equals("csv")) {
       for (JsonElement element : jsonArray) {
-        String[] eachColData = element.getAsString().split(",");
+        String[] eachColData = element.getAsString().split(delimiter);
         for (int num = 0; num < eachColData.length; num++) {
           columnDataType.put("col_" + (num + 1), checkDataType(eachColData[num], columnDataType.get("col_" + (num + 1))));
         }
       }
     }
-    
     return makeCloumnList(columnDataType);
   }
   
