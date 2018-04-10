@@ -1,0 +1,25 @@
+log.directory=/log/zero/
+
+db.zero.driver=oracle.jdbc.driver.OracleDriver
+db.zero.url=jdbc:oracle:thin:@127.0.0.1:1521:ZERO
+db.zero.id=zero
+db.zero.pass=zero
+
+db.zero.sel=\
+SELECT ID            \
+      ,NAME          \
+  FROM TEST          \
+ WHERE SEND_YN = 'N' \
+   AND DATE >= SYSDATE - 1/24/60
+
+db.zero.upd=\
+UPDATE TEST           \
+   SET SEND_YN = 'Y'  \
+      ,DATE = SYSDATE \
+ WHERE ID = ?         \
+   AND NAME = ?
+
+
+
+
+
