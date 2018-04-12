@@ -22,7 +22,7 @@ public class XmlPaserTest {
     try {
       String name = URLEncoder.encode("test", "UTF-8");
       URL url = new URL("http://openapi.molit.go.kr:8081/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTrade"
-          + "?serviceKey=ae7QXgI7z5m4m%2FvHTi6o12s6W4T7FUnYh3UG3qEGoZRbCCNoSOt6XQRUfAbOFauAp%2BZ%2B4tJqsh7PvSm6vR6Q2g%3D%3D"
+          + "?serviceKey=7QXgI7z5m4m%2FvHTi6o12s6W4T7FUnYh3UG3qEGoZRbCCNoSOt6XQRUfAbOFauAp%2BZ%2B4tJqsh7PvSm6vR6Q2g%3D%3D"//ae
           + "&DEAL_YMD=" + dealYMD
           + "&LAWD_CD=" + lawdCd);
       con = (HttpURLConnection) url.openConnection();
