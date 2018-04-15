@@ -1,0 +1,278 @@
+■ sigunguName ; 서울특별시, sigunguCode : 11000, urlCon : OK, 200, line : 248
+■ sigunguName ; 서울특별시 종로구, sigunguCode : 11110, urlCon : OK, 200, line : 15483
+■ sigunguName ; 서울특별시 중구, sigunguCode : 11140, urlCon : OK, 200, line : 41118
+■ sigunguName ; 서울특별시 용산구, sigunguCode : 11170, urlCon : OK, 200, line : 68256
+■ sigunguName ; 서울특별시 성동구, sigunguCode : 11200, urlCon : OK, 200, line : 107074
+■ sigunguName ; 서울특별시 광진구, sigunguCode : 11215, urlCon : OK, 200, line : 49849
+■ sigunguName ; 서울특별시 동대문구, sigunguCode : 11230, urlCon : OK, 200, line : 86483
+■ sigunguName ; 서울특별시 중랑구, sigunguCode : 11260, urlCon : OK, 200, line : 63468
+■ sigunguName ; 서울특별시 성북구, sigunguCode : 11290, urlCon : OK, 200, line : 106686
+■ sigunguName ; 서울특별시 강북구, sigunguCode : 11305, urlCon : OK, 200, line : 30056
+■ sigunguName ; 서울특별시 도봉구, sigunguCode : 11320, urlCon : OK, 200, line : 64337
+■ sigunguName ; 서울특별시 노원구, sigunguCode : 11350, urlCon : OK, 200, line : 181333
+■ sigunguName ; 서울특별시 은평구, sigunguCode : 11380, urlCon : OK, 200, line : 57290
+■ sigunguName ; 서울특별시 서대문구, sigunguCode : 11410, urlCon : OK, 200, line : 77948
+■ sigunguName ; 서울특별시 마포구, sigunguCode : 11440, urlCon : OK, 200, line : 100173
+■ sigunguName ; 서울특별시 양천구, sigunguCode : 11470, urlCon : OK, 200, line : 94973
+■ sigunguName ; 서울특별시 강서구, sigunguCode : 11500, urlCon : OK, 200, line : 114460
+■ sigunguName ; 서울특별시 구로구, sigunguCode : 11530, urlCon : OK, 200, line : 86626
+■ sigunguName ; 서울특별시 금천구, sigunguCode : 11545, urlCon : OK, 200, line : 21040
+■ sigunguName ; 서울특별시 영등포구, sigunguCode : 11560, urlCon : OK, 200, line : 105277
+■ sigunguName ; 서울특별시 동작구, sigunguCode : 11590, urlCon : OK, 200, line : 93969
+■ sigunguName ; 서울특별시 관악구, sigunguCode : 11620, urlCon : OK, 200, line : 64061
+■ sigunguName ; 서울특별시 서초구, sigunguCode : 11650, urlCon : OK, 200, line : 113878
+■ sigunguName ; 서울특별시 강남구, sigunguCode : 11680, urlCon : OK, 200, line : 139800
+■ sigunguName ; 서울특별시 송파구, sigunguCode : 11710, urlCon : OK, 200, line : 171807
+■ sigunguName ; 서울특별시 강동구, sigunguCode : 11740, urlCon : OK, 200, line : 127775
+■ sigunguName ; 부산광역시, sigunguCode : 26000, urlCon : OK, 200, line : 248
+■ sigunguName ; 부산광역시 중구, sigunguCode : 26110, urlCon : OK, 200, line : 3749
+■ sigunguName ; 부산광역시 서구, sigunguCode : 26140, urlCon : OK, 200, line : 8821
+■ sigunguName ; 부산광역시 동구, sigunguCode : 26170, urlCon : OK, 200, line : 6598
+■ sigunguName ; 부산광역시 영도구, sigunguCode : 26200, urlCon : OK, 200, line : 12965
+■ sigunguName ; 부산광역시 부산진구, sigunguCode : 26230, urlCon : OK, 200, line : 66478
+■ sigunguName ; 부산광역시 동래구, sigunguCode : 26260, urlCon : OK, 200, line : 29039
+■ sigunguName ; 부산광역시 남구, sigunguCode : 26290, urlCon : OK, 200, line : 35103
+■ sigunguName ; 부산광역시 북구, sigunguCode : 26320, urlCon : OK, 200, line : 40531
+■ sigunguName ; 부산광역시 해운대구, sigunguCode : 26350, urlCon : OK, 200, line : 67380
+■ sigunguName ; 부산광역시 사하구, sigunguCode : 26380, urlCon : OK, 200, line : 46519
+■ sigunguName ; 부산광역시 금정구, sigunguCode : 26410, urlCon : OK, 200, line : 26741
+■ sigunguName ; 부산광역시 강서구, sigunguCode : 26440, urlCon : OK, 200, line : 12625
+■ sigunguName ; 부산광역시 연제구, sigunguCode : 26470, urlCon : OK, 200, line : 25298
+■ sigunguName ; 부산광역시 수영구, sigunguCode : 26500, urlCon : OK, 200, line : 20440
+■ sigunguName ; 부산광역시 사상구, sigunguCode : 26530, urlCon : OK, 200, line : 29552
+■ sigunguName ; 부산광역시 기장군, sigunguCode : 26710, urlCon : OK, 200, line : 93470
+■ sigunguName ; 대구광역시, sigunguCode : 27000, urlCon : OK, 200, line : 248
+■ sigunguName ; 대구광역시 중구, sigunguCode : 27110, urlCon : OK, 200, line : 16379
+■ sigunguName ; 대구광역시 동구, sigunguCode : 27140, urlCon : OK, 200, line : 65735
+■ sigunguName ; 대구광역시 서구, sigunguCode : 27170, urlCon : OK, 200, line : 19676
+■ sigunguName ; 대구광역시 남구, sigunguCode : 27200, urlCon : OK, 200, line : 9680
+■ sigunguName ; 대구광역시 북구, sigunguCode : 27230, urlCon : OK, 200, line : 105572
+■ sigunguName ; 대구광역시 수성구, sigunguCode : 27260, urlCon : OK, 200, line : 98209
+■ sigunguName ; 대구광역시 달서구, sigunguCode : 27290, urlCon : OK, 200, line : 131225
+■ sigunguName ; 대구광역시 달성군, sigunguCode : 27710, urlCon : OK, 200, line : 54134
+■ sigunguName ; 인천광역시, sigunguCode : 28000, urlCon : OK, 200, line : 248
+■ sigunguName ; 인천광역시 중구, sigunguCode : 28110, urlCon : OK, 200, line : 15772
+■ sigunguName ; 인천광역시 동구, sigunguCode : 28140, urlCon : OK, 200, line : 11338
+■ sigunguName ; 인천광역시 남구, sigunguCode : 28170, urlCon : OK, 200, line : 51016
+■ sigunguName ; 인천광역시 연수구, sigunguCode : 28185, urlCon : OK, 200, line : 61917
+■ sigunguName ; 인천광역시 남동구, sigunguCode : 28200, urlCon : OK, 200, line : 88035
+■ sigunguName ; 인천광역시 부평구, sigunguCode : 28237, urlCon : OK, 200, line : 76716
+■ sigunguName ; 인천광역시 계양구, sigunguCode : 28245, urlCon : OK, 200, line : 61002
+■ sigunguName ; 인천광역시 서구, sigunguCode : 28260, urlCon : OK, 200, line : 79513
+■ sigunguName ; 인천광역시 강화군, sigunguCode : 28710, urlCon : OK, 200, line : 2342
+■ sigunguName ; 인천광역시 옹진군, sigunguCode : 28720, urlCon : OK, 200, line : 248
+■ sigunguName ; 광주광역시, sigunguCode : 29000, urlCon : OK, 200, line : 248
+■ sigunguName ; 광주광역시 동구, sigunguCode : 29110, urlCon : OK, 200, line : 10978
+■ sigunguName ; 광주광역시 서구, sigunguCode : 29140, urlCon : OK, 200, line : 81635
+■ sigunguName ; 광주광역시 남구, sigunguCode : 29155, urlCon : OK, 200, line : 52280
+■ sigunguName ; 광주광역시 북구, sigunguCode : 29170, urlCon : OK, 200, line : 112147
+■ sigunguName ; 광주광역시 광산구, sigunguCode : 29200, urlCon : OK, 200, line : 107517
+■ sigunguName ; 대전광역시, sigunguCode : 30000, urlCon : OK, 200, line : 248
+■ sigunguName ; 대전광역시 동구, sigunguCode : 30110, urlCon : OK, 200, line : 38566
+■ sigunguName ; 대전광역시 중구, sigunguCode : 30140, urlCon : OK, 200, line : 42975
+■ sigunguName ; 대전광역시 서구, sigunguCode : 30170, urlCon : OK, 200, line : 97582
+■ sigunguName ; 대전광역시 유성구, sigunguCode : 30200, urlCon : OK, 200, line : 81882
+■ sigunguName ; 대전광역시 대덕구, sigunguCode : 30230, urlCon : OK, 200, line : 27205
+■ sigunguName ; 울산광역시, sigunguCode : 31000, urlCon : OK, 200, line : 248
+■ sigunguName ; 울산광역시 중구, sigunguCode : 31110, urlCon : OK, 200, line : 25980
+■ sigunguName ; 울산광역시 남구, sigunguCode : 31140, urlCon : OK, 200, line : 40113
+■ sigunguName ; 울산광역시 동구, sigunguCode : 31170, urlCon : OK, 200, line : 16439
+■ sigunguName ; 울산광역시 북구, sigunguCode : 31200, urlCon : OK, 200, line : 29426
+■ sigunguName ; 울산광역시 울주군, sigunguCode : 31710, urlCon : OK, 200, line : 27106
+■ sigunguName ; 세종특별자치시, sigunguCode : 36000, urlCon : OK, 200, line : 248
+■ sigunguName ; 세종특별자치시, sigunguCode : 36110, urlCon : OK, 200, line : 48603
+■ sigunguName ; 경기도, sigunguCode : 41000, urlCon : OK, 200, line : 248
+■ sigunguName ; 경기도 수원시, sigunguCode : 41110, urlCon : OK, 200, line : 248
+■ sigunguName ; 경기도 수원시 장안구, sigunguCode : 41111, urlCon : OK, 200, line : 43036
+■ sigunguName ; 경기도 수원시 권선구, sigunguCode : 41113, urlCon : OK, 200, line : 50332
+■ sigunguName ; 경기도 수원시 팔달구, sigunguCode : 41115, urlCon : OK, 200, line : 35429
+■ sigunguName ; 경기도 수원시 영통구, sigunguCode : 41117, urlCon : OK, 200, line : 103439
+■ sigunguName ; 경기도 성남시, sigunguCode : 41130, urlCon : OK, 200, line : 248
+■ sigunguName ; 경기도 성남시 수정구, sigunguCode : 41131, urlCon : OK, 200, line : 28429
+■ sigunguName ; 경기도 성남시 중원구, sigunguCode : 41133, urlCon : OK, 200, line : 39983
+■ sigunguName ; 경기도 성남시 분당구, sigunguCode : 41135, urlCon : OK, 200, line : 278198
+■ sigunguName ; 경기도 의정부시, sigunguCode : 41150, urlCon : OK, 200, line : 71727
+■ sigunguName ; 경기도 안양시, sigunguCode : 41170, urlCon : OK, 200, line : 248
+■ sigunguName ; 경기도 안양시 만안구, sigunguCode : 41171, urlCon : OK, 200, line : 45318
+■ sigunguName ; 경기도 안양시 동안구, sigunguCode : 41173, urlCon : OK, 200, line : 121007
+■ sigunguName ; 경기도 부천시, sigunguCode : 41190, urlCon : OK, 200, line : 111389
+■ sigunguName ; 경기도 광명시, sigunguCode : 41210, urlCon : OK, 200, line : 85575
+■ sigunguName ; 경기도 평택시, sigunguCode : 41220, urlCon : OK, 200, line : 53644
+■ sigunguName ; 경기도 동두천시, sigunguCode : 41250, urlCon : OK, 200, line : 15378
+■ sigunguName ; 경기도 안산시, sigunguCode : 41270, urlCon : OK, 200, line : 248
+■ sigunguName ; 경기도 안산시 상록구, sigunguCode : 41271, urlCon : OK, 200, line : 21323
+■ sigunguName ; 경기도 안산시 단원구, sigunguCode : 41273, urlCon : OK, 200, line : 30961
+■ sigunguName ; 경기도 고양시, sigunguCode : 41280, urlCon : OK, 200, line : 248
+■ sigunguName ; 경기도 고양시 덕양구, sigunguCode : 41281, urlCon : OK, 200, line : 82345
+■ sigunguName ; 경기도 고양시 일산동구, sigunguCode : 41285, urlCon : OK, 200, line : 36520
+■ sigunguName ; 경기도 고양시 일산서구, sigunguCode : 41287, urlCon : OK, 200, line : 65333
+■ sigunguName ; 경기도 과천시, sigunguCode : 41290, urlCon : OK, 200, line : 25788
+■ sigunguName ; 경기도 구리시, sigunguCode : 41310, urlCon : OK, 200, line : 29354
+■ sigunguName ; 경기도 남양주시, sigunguCode : 41360, urlCon : OK, 200, line : 103301
+■ sigunguName ; 경기도 오산시, sigunguCode : 41370, urlCon : OK, 200, line : 27237
+■ sigunguName ; 경기도 시흥시, sigunguCode : 41390, urlCon : OK, 200, line : 61932
+■ sigunguName ; 경기도 군포시, sigunguCode : 41410, urlCon : OK, 200, line : 50144
+■ sigunguName ; 경기도 의왕시, sigunguCode : 41430, urlCon : OK, 200, line : 52250
+■ sigunguName ; 경기도 하남시, sigunguCode : 41450, urlCon : OK, 200, line : 54983
+■ sigunguName ; 경기도 용인시, sigunguCode : 41460, urlCon : OK, 200, line : 248
+■ sigunguName ; 경기도 용인시 처인구, sigunguCode : 41461, urlCon : OK, 200, line : 20486
+■ sigunguName ; 경기도 용인시 기흥구, sigunguCode : 41463, urlCon : OK, 200, line : 82635
+■ sigunguName ; 경기도 용인시 수지구, sigunguCode : 41465, urlCon : OK, 200, line : 229378
+■ sigunguName ; 경기도 파주시, sigunguCode : 41480, urlCon : OK, 200, line : 57931
+■ sigunguName ; 경기도 이천시, sigunguCode : 41500, urlCon : OK, 200, line : 27285
+■ sigunguName ; 경기도 안성시, sigunguCode : 41550, urlCon : OK, 200, line : 18635
+■ sigunguName ; 경기도 김포시, sigunguCode : 41570, urlCon : OK, 200, line : 85899
+■ sigunguName ; 경기도 화성시, sigunguCode : 41590, urlCon : OK, 200, line : 123543
+■ sigunguName ; 경기도 광주시, sigunguCode : 41610, urlCon : OK, 200, line : 21395
+■ sigunguName ; 경기도 양주시, sigunguCode : 41630, urlCon : OK, 200, line : 30744
+■ sigunguName ; 경기도 포천시, sigunguCode : 41650, urlCon : OK, 200, line : 10941
+■ sigunguName ; 경기도 여주시, sigunguCode : 41670, urlCon : OK, 200, line : 12437
+■ sigunguName ; 경기도 연천군, sigunguCode : 41800, urlCon : OK, 200, line : 2021
+■ sigunguName ; 경기도 가평군, sigunguCode : 41820, urlCon : OK, 200, line : 4809
+■ sigunguName ; 경기도 양평군, sigunguCode : 41830, urlCon : OK, 200, line : 9061
+■ sigunguName ; 강원도, sigunguCode : 42000, urlCon : OK, 200, line : 248
+■ sigunguName ; 강원도 춘천시, sigunguCode : 42110, urlCon : OK, 200, line : 44452
+■ sigunguName ; 강원도 원주시, sigunguCode : 42130, urlCon : OK, 200, line : 42935
+■ sigunguName ; 강원도 강릉시, sigunguCode : 42150, urlCon : OK, 200, line : 30300
+■ sigunguName ; 강원도 동해시, sigunguCode : 42170, urlCon : OK, 200, line : 10210
+■ sigunguName ; 강원도 태백시, sigunguCode : 42190, urlCon : OK, 200, line : 7662
+■ sigunguName ; 강원도 속초시, sigunguCode : 42210, urlCon : OK, 200, line : 19762
+■ sigunguName ; 강원도 삼척시, sigunguCode : 42230, urlCon : OK, 200, line : 10858
+■ sigunguName ; 강원도 홍천군, sigunguCode : 42720, urlCon : OK, 200, line : 5337
+■ sigunguName ; 강원도 횡성군, sigunguCode : 42730, urlCon : OK, 200, line : 2379
+■ sigunguName ; 강원도 영월군, sigunguCode : 42750, urlCon : OK, 200, line : 2503
+■ sigunguName ; 강원도 평창군, sigunguCode : 42760, urlCon : OK, 200, line : 3772
+■ sigunguName ; 강원도 정선군, sigunguCode : 42770, urlCon : OK, 200, line : 1463
+■ sigunguName ; 강원도 철원군, sigunguCode : 42780, urlCon : OK, 200, line : 2355
+■ sigunguName ; 강원도 화천군, sigunguCode : 42790, urlCon : OK, 200, line : 954
+■ sigunguName ; 강원도 양구군, sigunguCode : 42800, urlCon : OK, 200, line : 600
+■ sigunguName ; 강원도 인제군, sigunguCode : 42810, urlCon : OK, 200, line : 962
+■ sigunguName ; 강원도 고성군, sigunguCode : 42820, urlCon : OK, 200, line : 2720
+■ sigunguName ; 강원도 양양군, sigunguCode : 42830, urlCon : OK, 200, line : 3065
+■ sigunguName ; 충청북도, sigunguCode : 43000, urlCon : OK, 200, line : 248
+■ sigunguName ; 충청북도 청주시, sigunguCode : 43110, urlCon : OK, 200, line : 248
+■ sigunguName ; 충청북도 청주시 상당구, sigunguCode : 43111, urlCon : OK, 200, line : 24977
+■ sigunguName ; 충청북도 청주시 서원구, sigunguCode : 43112, urlCon : OK, 200, line : 28516
+■ sigunguName ; 충청북도 청주시 흥덕구, sigunguCode : 43113, urlCon : OK, 200, line : 42248
+■ sigunguName ; 충청북도 청주시 청원구, sigunguCode : 43114, urlCon : OK, 200, line : 30598
+■ sigunguName ; 충청북도 충주시, sigunguCode : 43130, urlCon : OK, 200, line : 22155
+■ sigunguName ; 충청북도 제천시, sigunguCode : 43150, urlCon : OK, 200, line : 21618
+■ sigunguName ; 충청북도 보은군, sigunguCode : 43720, urlCon : OK, 200, line : 1472
+■ sigunguName ; 충청북도 옥천군, sigunguCode : 43730, urlCon : OK, 200, line : 4028
+■ sigunguName ; 충청북도 영동군, sigunguCode : 43740, urlCon : OK, 200, line : 3088
+■ sigunguName ; 충청북도 증평군, sigunguCode : 43745, urlCon : OK, 200, line : 5310
+■ sigunguName ; 충청북도 진천군, sigunguCode : 43750, urlCon : OK, 200, line : 14623
+■ sigunguName ; 충청북도 괴산군, sigunguCode : 43760, urlCon : OK, 200, line : 1682
+■ sigunguName ; 충청북도 음성군, sigunguCode : 43770, urlCon : OK, 200, line : 13683
+■ sigunguName ; 충청북도 단양군, sigunguCode : 43800, urlCon : OK, 200, line : 2862
+■ sigunguName ; 충청남도, sigunguCode : 44000, urlCon : OK, 200, line : 248
+■ sigunguName ; 충청남도 천안시, sigunguCode : 44130, urlCon : OK, 200, line : 248
+■ sigunguName ; 충청남도 천안시 동남구, sigunguCode : 44131, urlCon : OK, 200, line : 41198
+■ sigunguName ; 충청남도 천안시 서북구, sigunguCode : 44133, urlCon : OK, 200, line : 72911
+■ sigunguName ; 충청남도 공주시, sigunguCode : 44150, urlCon : OK, 200, line : 9373
+■ sigunguName ; 충청남도 보령시, sigunguCode : 44180, urlCon : OK, 200, line : 6673
+■ sigunguName ; 충청남도 아산시, sigunguCode : 44200, urlCon : OK, 200, line : 52922
+■ sigunguName ; 충청남도 서산시, sigunguCode : 44210, urlCon : OK, 200, line : 19144
+■ sigunguName ; 충청남도 논산시, sigunguCode : 44230, urlCon : OK, 200, line : 10413
+■ sigunguName ; 충청남도 계룡시, sigunguCode : 44250, urlCon : OK, 200, line : 10340
+■ sigunguName ; 충청남도 당진시, sigunguCode : 44270, urlCon : OK, 200, line : 19580
+■ sigunguName ; 충청남도 금산군, sigunguCode : 44710, urlCon : OK, 200, line : 3380
+■ sigunguName ; 충청남도 부여군, sigunguCode : 44760, urlCon : OK, 200, line : 3006
+■ sigunguName ; 충청남도 서천군, sigunguCode : 44770, urlCon : OK, 200, line : 1318
+■ sigunguName ; 충청남도 청양군, sigunguCode : 44790, urlCon : OK, 200, line : 1130
+■ sigunguName ; 충청남도 홍성군, sigunguCode : 44800, urlCon : OK, 200, line : 13753
+■ sigunguName ; 충청남도 예산군, sigunguCode : 44810, urlCon : OK, 200, line : 7323
+■ sigunguName ; 충청남도 태안군, sigunguCode : 44825, urlCon : OK, 200, line : 4788
+■ sigunguName ; 전라북도, sigunguCode : 45000, urlCon : OK, 200, line : 248
+■ sigunguName ; 전라북도 전주시, sigunguCode : 45110, urlCon : OK, 200, line : 248
+■ sigunguName ; 전라북도 전주시 완산구, sigunguCode : 45111, urlCon : OK, 200, line : 70375
+■ sigunguName ; 전라북도 전주시 덕진구, sigunguCode : 45113, urlCon : OK, 200, line : 66520
+■ sigunguName ; 전라북도 군산시, sigunguCode : 45130, urlCon : OK, 200, line : 40895
+■ sigunguName ; 전라북도 익산시, sigunguCode : 45140, urlCon : OK, 200, line : 53509
+■ sigunguName ; 전라북도 정읍시, sigunguCode : 45180, urlCon : OK, 200, line : 11468
+■ sigunguName ; 전라북도 남원시, sigunguCode : 45190, urlCon : OK, 200, line : 5902
+■ sigunguName ; 전라북도 김제시, sigunguCode : 45210, urlCon : OK, 200, line : 9851
+■ sigunguName ; 전라북도 완주군, sigunguCode : 45710, urlCon : OK, 200, line : 13206
+■ sigunguName ; 전라북도 진안군, sigunguCode : 45720, urlCon : OK, 200, line : 1307
+■ sigunguName ; 전라북도 무주군, sigunguCode : 45730, urlCon : OK, 200, line : 1321
+■ sigunguName ; 전라북도 장수군, sigunguCode : 45740, urlCon : OK, 200, line : 434
+■ sigunguName ; 전라북도 임실군, sigunguCode : 45750, urlCon : OK, 200, line : 1155
+■ sigunguName ; 전라북도 순창군, sigunguCode : 45770, urlCon : OK, 200, line : 776
+■ sigunguName ; 전라북도 고창군, sigunguCode : 45790, urlCon : OK, 200, line : 3579
+■ sigunguName ; 전라북도 부안군, sigunguCode : 45800, urlCon : OK, 200, line : 4982
+■ sigunguName ; 전라남도, sigunguCode : 46000, urlCon : OK, 200, line : 248
+■ sigunguName ; 전라남도 목포시, sigunguCode : 46110, urlCon : OK, 200, line : 44443
+■ sigunguName ; 전라남도 여수시, sigunguCode : 46130, urlCon : OK, 200, line : 49743
+■ sigunguName ; 전라남도 순천시, sigunguCode : 46150, urlCon : OK, 200, line : 62619
+■ sigunguName ; 전라남도 나주시, sigunguCode : 46170, urlCon : OK, 200, line : 10586
+■ sigunguName ; 전라남도 광양시, sigunguCode : 46230, urlCon : OK, 200, line : 52289
+■ sigunguName ; 전라남도 담양군, sigunguCode : 46710, urlCon : OK, 200, line : 778
+■ sigunguName ; 전라남도 곡성군, sigunguCode : 46720, urlCon : OK, 200, line : 612
+■ sigunguName ; 전라남도 구례군, sigunguCode : 46730, urlCon : OK, 200, line : 783
+■ sigunguName ; 전라남도 고흥군, sigunguCode : 46770, urlCon : OK, 200, line : 3250
+■ sigunguName ; 전라남도 보성군, sigunguCode : 46780, urlCon : OK, 200, line : 2534
+■ sigunguName ; 전라남도 화순군, sigunguCode : 46790, urlCon : OK, 200, line : 7042
+■ sigunguName ; 전라남도 장흥군, sigunguCode : 46800, urlCon : OK, 200, line : 1647
+■ sigunguName ; 전라남도 강진군, sigunguCode : 46810, urlCon : OK, 200, line : 1128
+■ sigunguName ; 전라남도 해남군, sigunguCode : 46820, urlCon : OK, 200, line : 4282
+■ sigunguName ; 전라남도 영암군, sigunguCode : 46830, urlCon : OK, 200, line : 7787
+■ sigunguName ; 전라남도 무안군, sigunguCode : 46840, urlCon : OK, 200, line : 7011
+■ sigunguName ; 전라남도 함평군, sigunguCode : 46860, urlCon : OK, 200, line : 780
+■ sigunguName ; 전라남도 영광군, sigunguCode : 46870, urlCon : OK, 200, line : 4875
+■ sigunguName ; 전라남도 장성군, sigunguCode : 46880, urlCon : OK, 200, line : 2162
+■ sigunguName ; 전라남도 완도군, sigunguCode : 46890, urlCon : OK, 200, line : 1656
+■ sigunguName ; 전라남도 진도군, sigunguCode : 46900, urlCon : OK, 200, line : 429
+■ sigunguName ; 전라남도 신안군, sigunguCode : 46910, urlCon : OK, 200, line : 248
+■ sigunguName ; 경상북도, sigunguCode : 47000, urlCon : OK, 200, line : 248
+■ sigunguName ; 경상북도 포항시, sigunguCode : 47110, urlCon : OK, 200, line : 248
+■ sigunguName ; 경상북도 포항시 남구, sigunguCode : 47111, urlCon : OK, 200, line : 23245
+■ sigunguName ; 경상북도 포항시 북구, sigunguCode : 47113, urlCon : OK, 200, line : 31958
+■ sigunguName ; 경상북도 경주시, sigunguCode : 47130, urlCon : OK, 200, line : 18967
+■ sigunguName ; 경상북도 김천시, sigunguCode : 47150, urlCon : OK, 200, line : 16907
+■ sigunguName ; 경상북도 안동시, sigunguCode : 47170, urlCon : OK, 200, line : 15783
+■ sigunguName ; 경상북도 구미시, sigunguCode : 47190, urlCon : OK, 200, line : 70130
+■ sigunguName ; 경상북도 영주시, sigunguCode : 47210, urlCon : OK, 200, line : 10800
+■ sigunguName ; 경상북도 영천시, sigunguCode : 47230, urlCon : OK, 200, line : 10730
+■ sigunguName ; 경상북도 상주시, sigunguCode : 47250, urlCon : OK, 200, line : 10609
+■ sigunguName ; 경상북도 문경시, sigunguCode : 47280, urlCon : OK, 200, line : 5639
+■ sigunguName ; 경상북도 경산시, sigunguCode : 47290, urlCon : OK, 200, line : 47562
+■ sigunguName ; 경상북도 군위군, sigunguCode : 47720, urlCon : OK, 200, line : 779
+■ sigunguName ; 경상북도 의성군, sigunguCode : 47730, urlCon : OK, 200, line : 1851
+■ sigunguName ; 경상북도 청송군, sigunguCode : 47750, urlCon : OK, 200, line : 1300
+■ sigunguName ; 경상북도 영양군, sigunguCode : 47760, urlCon : OK, 200, line : 428
+■ sigunguName ; 경상북도 영덕군, sigunguCode : 47770, urlCon : OK, 200, line : 3443
+■ sigunguName ; 경상북도 청도군, sigunguCode : 47820, urlCon : OK, 200, line : 1501
+■ sigunguName ; 경상북도 고령군, sigunguCode : 47830, urlCon : OK, 200, line : 3300
+■ sigunguName ; 경상북도 성주군, sigunguCode : 47840, urlCon : OK, 200, line : 2378
+■ sigunguName ; 경상북도 칠곡군, sigunguCode : 47850, urlCon : OK, 200, line : 19175
+■ sigunguName ; 경상북도 예천군, sigunguCode : 47900, urlCon : OK, 200, line : 6469
+■ sigunguName ; 경상북도 봉화군, sigunguCode : 47920, urlCon : OK, 200, line : 785
+■ sigunguName ; 경상북도 울진군, sigunguCode : 47930, urlCon : OK, 200, line : 3402
+■ sigunguName ; 경상북도 울릉군, sigunguCode : 47940, urlCon : OK, 200, line : 428
+■ sigunguName ; 경상남도, sigunguCode : 48000, urlCon : OK, 200, line : 248
+■ sigunguName ; 경상남도 창원시, sigunguCode : 48120, urlCon : OK, 200, line : 248
+■ sigunguName ; 경상남도 창원시 의창구, sigunguCode : 48121, urlCon : OK, 200, line : 16724
+■ sigunguName ; 경상남도 창원시 성산구, sigunguCode : 48123, urlCon : OK, 200, line : 57612
+■ sigunguName ; 경상남도 창원시 마산합포구, sigunguCode : 48125, urlCon : OK, 200, line : 15309
+■ sigunguName ; 경상남도 창원시 마산회원구, sigunguCode : 48127, urlCon : OK, 200, line : 16117
+■ sigunguName ; 경상남도 창원시 진해구, sigunguCode : 48129, urlCon : OK, 200, line : 18670
+■ sigunguName ; 경상남도 진주시, sigunguCode : 48170, urlCon : OK, 200, line : 66911
+■ sigunguName ; 경상남도 통영시, sigunguCode : 48220, urlCon : OK, 200, line : 15901
+■ sigunguName ; 경상남도 사천시, sigunguCode : 48240, urlCon : OK, 200, line : 17160
+■ sigunguName ; 경상남도 김해시, sigunguCode : 48250, urlCon : OK, 200, line : 75894
+■ sigunguName ; 경상남도 밀양시, sigunguCode : 48270, urlCon : OK, 200, line : 12648
+■ sigunguName ; 경상남도 거제시, sigunguCode : 48310, urlCon : OK, 200, line : 29904
+■ sigunguName ; 경상남도 양산시, sigunguCode : 48330, urlCon : OK, 200, line : 59833
+■ sigunguName ; 경상남도 의령군, sigunguCode : 48720, urlCon : OK, 200, line : 785
+■ sigunguName ; 경상남도 함안군, sigunguCode : 48730, urlCon : OK, 200, line : 7892
+■ sigunguName ; 경상남도 창녕군, sigunguCode : 48740, urlCon : OK, 200, line : 3089
+■ sigunguName ; 경상남도 고성군, sigunguCode : 48820, urlCon : OK, 200, line : 5394
+■ sigunguName ; 경상남도 남해군, sigunguCode : 48840, urlCon : OK, 200, line : 1645
+■ sigunguName ; 경상남도 하동군, sigunguCode : 48850, urlCon : OK, 200, line : 2371
+■ sigunguName ; 경상남도 산청군, sigunguCode : 48860, urlCon : OK, 200, line : 1836
+■ sigunguName ; 경상남도 함양군, sigunguCode : 48870, urlCon : OK, 200, line : 1132
+■ sigunguName ; 경상남도 거창군, sigunguCode : 48880, urlCon : OK, 200, line : 8478
+■ sigunguName ; 경상남도 합천군, sigunguCode : 48890, urlCon : OK, 200, line : 2712
+■ sigunguName ; 제주특별자치도, sigunguCode : 50000, urlCon : OK, 200, line : 248
+■ sigunguName ; 제주특별자치도 제주시, sigunguCode : 50110, urlCon : OK, 200, line : 29221
+■ sigunguName ; 제주특별자치도 서귀포시, sigunguCode : 50130, urlCon : OK, 200, line : 9418
