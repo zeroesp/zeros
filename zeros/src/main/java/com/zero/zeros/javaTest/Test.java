@@ -1,7 +1,9 @@
 package com.zero.zeros.javaTest;
 
+import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import org.springframework.web.util.UriComponentsBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -22,5 +24,26 @@ public class Test {
       }
       System.out.println("obj : " + obj);
     }
+    
+    UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.newInstance();
+    
+    uriComponentsBuilder.scheme("http").host("poc02:7070")
+    .path("/api/v1")
+    .path("/util/hdfs/web").queryParam("op", "create").queryParam("path", URLEncoder.encode("http://poc02:7070/api/v1/meta_sql_clone(5s) test_20180627.json", "UTF-8"))
+    .queryParam("user.name", "test").queryParam("overwrite", true);
+    
+    System.out.println(uriComponentsBuilder.build().toUriString());
+    
+    String apiUrl = "http://poc02:7070/api/v1/util/hdfs/web?op=create" + "&path=" + URLEncoder.encode("http://poc02:7070/api/v1/meta_sql_clone(5s) test_20180627.json", "UTF-8") + "&user.name=test&overwrite=true" + "&webhdfsUrl=url";
+    
+    System.out.println(apiUrl);
+    
+    System.out.println(URLEncoder.encode("http://poc02:7070/api/v1/meta sql clone(5s) test_20180627.json", "UTF-8").replaceAll( "\\+", "_" ));
+    
+    while(true) {
+      System.out.println(System.currentTimeMillis());
+      Thread.sleep(1000);
+    }
+        
   }
 }
