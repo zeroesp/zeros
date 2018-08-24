@@ -40,10 +40,20 @@ public class Test {
     
     System.out.println(URLEncoder.encode("http://poc02:7070/api/v1/meta sql clone(5s) test_20180627.json", "UTF-8").replaceAll( "\\+", "_" ));
     
-    while(true) {
+    /*while(true) {
       System.out.println(System.currentTimeMillis());
       Thread.sleep(1000);
+    }*/
+    
+    String input = (String)"1,2,3,4";
+    if(input != null && input != "") {
+      String[] split = input.split(",");
+      if(split.length > 0 ) {
+        String res = "{\"message\":\"" + split[0] + "\",\"time\":\"" + split[1] + "\",\"hosts\":\"" + split[2] + "\",\"ips\":\"" + split[3] + "\"}";
+        System.out.println(res);
+        System.out.println("{\"result\":\"success\"}");
+      }
     }
-        
+    
   }
 }
