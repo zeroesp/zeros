@@ -1,0 +1,2 @@
+net.sf.fjep.fatjar_0.0.32.jar를 eclipse/plugins 폴더에 넣고 재부팅
+메뉴에 Build Fat Jar로 실행하여 jar파일 생성

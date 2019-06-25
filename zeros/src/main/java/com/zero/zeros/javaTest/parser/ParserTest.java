@@ -125,6 +125,15 @@ public class ParserTest {
   private static String checkDataFormat(JsonArray jsonArray, String delimiter) {
     String dataFormat = "unknown";
     for (JsonElement element : jsonArray) {
+      try {
+        System.out.println("toString() : " + element.toString());
+        System.out.println("getAsString() : " + element.getAsString());
+        System.out.println("getAsJsonPrimitive() : " + element.getAsJsonPrimitive());
+        System.out.println("\n");
+      }catch(Exception e){
+        e.printStackTrace();
+      }
+      
       if (element.isJsonObject()) {
         if (dataFormat.equals("json") || dataFormat.equals("unknown")) {
           dataFormat = "json";
