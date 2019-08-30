@@ -54,6 +54,16 @@ public class Test {
         System.out.println("{\"result\":\"success\"}");
       }
     }
+
+
+    String exception = "org.apache.spark.sql.AnalysisException: cannot resolve '`col`' given input columns [spark.col_3, spark.message, spark.col_2, spark.plain, spark.col_1, spark.flat]; line 1 pos 7;\n"
+        + "'Project ['col]\n"
+        + "+- SubqueryAlias spark\n"
+        + "   +- LogicalRDD [col_1#32646, col_2#32647L, col_3#32648, message#32649, plain#32650, flat#32651], false";
+    String exception2 = "org.apache.spark.sql.AnalysisException: cannot resolve '`col`' given input columns";
+
+    System.out.println("-----\n" + exception);
+    System.out.println("-----\n" + exception.split(":")[1].split("\n")[0]);
     
   }
 }
