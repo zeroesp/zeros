@@ -108,8 +108,6 @@ public class adminClientTest {
       consumerGroupList(client);
     }
 
-    Map<MetricName, Metric> map = client.metrics().;
-
     client.close();
   }
 
