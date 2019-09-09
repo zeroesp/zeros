@@ -14,7 +14,7 @@ public class ProducerTestSimple {
     boolean result = false;
 
     Properties kafkaProps = new Properties();
-    kafkaProps.put("bootstrap.servers", "localhost:9092");
+    kafkaProps.put("bootstrap.servers", "localhost:9092,localhost:9093,localhost:9094");
     kafkaProps.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
     kafkaProps.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
@@ -26,14 +26,14 @@ public class ProducerTestSimple {
     try {
       kafkaProcuder = new KafkaProducer<String, String>(kafkaProps);
       //for (int i = 0; i < topicGenNum; i++) {
-      for (int i = 0; i < 10000; i++) {
+      for (int i = 0; i < 1000000000; i++) {
         //String msg = "Message " + i + new Date(System.currentTimeMillis());
         String msg = "{\"Message\":" + i + ",\"host\":\"" + hosts[(int)Math.floor(Math.random()*4.9)] + "\",\"ip\":\""
             + ips[(int)Math.floor(Math.random()*9.9)] + "." + ips[(int)Math.floor(Math.random()*9.9)] + "."
             + ips[(int)Math.floor(Math.random()*9.9)] + "." + ips[(int)Math.floor(Math.random()*9.9)] + "\"}" ;
-        kafkaProcuder.send(new ProducerRecord<String, String>("test", msg));
+        kafkaProcuder.send(new ProducerRecord<String, String>("test2", msg));
         System.out.println("Sent:" + msg);
-        Thread.sleep(1000);
+        Thread.sleep(100);
       }
       result = true;
     }catch(Exception e){

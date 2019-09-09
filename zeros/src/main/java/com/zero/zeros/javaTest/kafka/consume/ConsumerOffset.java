@@ -19,14 +19,16 @@ public class ConsumerOffset {
   //compile : java -cp .:kafka-clients-2.1.0.jar:slf4j-api-1.7.25.jar:gson-2.8.1.jar:lz4-java-1.4.1.jar:snappy-java-1.1.7.1.jar ConsumerTestOffsetAndTimestamp test.topic test.group
   public static void main(String[] args){
     Properties props = new Properties();
-		props.put("bootstrap.servers","localhost:9092,localhost:9092,localhost:9092");
+		props.put("bootstrap.servers","localhost:9092,localhost:9093,localhost:9094");
 		props.put("key.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
 		props.put("value.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
+		//timeout
+		//props.put("default.api.timeout.ms", 5000);
 
-		props.put("group.id","AccuInsightAPI222");
-		props.put("enable.auto.commit","false");
-		props.put("auto.offset.reset","latest");
-		props.put("isolation.level","read_uncommitted");
+		props.put("group.id","AccuInsightAPI333");
+		//props.put("enable.auto.commit","false");
+		//props.put("auto.offset.reset","latest");
+		//props.put("isolation.level","read_uncommitted");
 		//props.put("max.poll.records","100");
 
 		//props.put("security.protocol","SASL_PLAINTEXT");
@@ -38,7 +40,7 @@ public class ConsumerOffset {
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
 		try {
-			String topicName = "test";
+			String topicName = "test2";
 			//partition assign 및 offset 조회
 			Collection<TopicPartition> partitions = new ArrayList<>();
 
@@ -51,7 +53,7 @@ public class ConsumerOffset {
 			//partition assign
 			consumer.assign(partitions);
 
-			Thread.sleep(15000);
+			Thread.sleep(100);
 
 			//partition assign 및 offset 조회
 			Map<TopicPartition, Long> currentOffsets = new HashMap<>();
@@ -68,7 +70,7 @@ public class ConsumerOffset {
 							 + ", current: " + currentOffsets.get(t) + ", lag: " + (endOffsets.get(t) - currentOffsets.get(t)) );
 			});
 
-			Thread.sleep(15000);
+			Thread.sleep(100);
 
 		} catch(Exception e){
 			e.printStackTrace();

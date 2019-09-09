@@ -21,9 +21,9 @@ public class ConsumerTest{
 		props.put("bootstrap.servers","localhost:9092,localhost:9093,localhost:9094");
 		props.put("key.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
 		props.put("value.deserializer","org.apache.kafka.common.serialization.StringDeserializer");
-		props.put("client.id","zeroTest");
+		props.put("client.id","zeroID");
 
-		props.put("group.id","AccuInsightAPI222"); //consumer의 그룹명
+		props.put("group.id","AccuInsightAPI11"); //consumer의 그룹명
 		props.put("enable.auto.commit","false"); //자동으로 offset을 commit하지 않음
 		props.put("auto.offset.reset","latest"); //offset 정보가 없는 경우 최신 데이터 부터 읽음 (earlist: 가장 오래된 데이터 부터)
 		props.put("isolation.level","read_uncommitted"); //모든 데이터 읽음 (read_committed: 정상 트랜잭션 처리 또는 트랜잭션 처리하지 않은 데이터만 읽음)
@@ -43,7 +43,7 @@ public class ConsumerTest{
 		//kafka poll timeout
 		long pollTimeout = Long.MAX_VALUE;
 		//토픽명
-		String topicName = "test";
+		String topicName = "test2";
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
 		KafkaConsumer<String,String> consumer = new KafkaConsumer<>(props);

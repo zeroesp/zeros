@@ -64,6 +64,11 @@ public class Test {
 
     System.out.println("-----\n" + exception);
     System.out.println("-----\n" + exception.split(":")[1].split("\n")[0]);
+
+    String topicTest = "test-1-1-1-1";
+    System.out.println(topicTest.indexOf("-") + ",  " + topicTest.substring(topicTest.indexOf("-")+1));
+    System.out.println(topicTest.lastIndexOf("-") + ", " + topicTest.substring(0,topicTest.lastIndexOf("-")));
+    System.out.println(topicTest.lastIndexOf("-") + ", " + topicTest.substring(topicTest.lastIndexOf("-")+1));
     
   }
 }
