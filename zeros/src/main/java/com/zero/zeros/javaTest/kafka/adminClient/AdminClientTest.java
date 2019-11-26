@@ -103,40 +103,45 @@ public class AdminClientTest {
       updateTopicConfig(client, "zero", "ADD"); // client.alterConfigs(configs)
 
       getTopicDescribeInfo(client, topicList, "DESC"); // client.describeTopics(topics)
+                                                       // client.describeConfigs(configList).all().get();
 
-      getLogDirInfo(client);
+      getLogDirInfo(client); // client.describeLogDirs(asList(0,1,2));
 
       updateTopicPartition(client, "zero"); // client.createPartitions(partition)
 
       updateTopicConfig(client, "zero", ""); // client.alterConfigs(remove)
 
       getTopicDescribeInfo(client, topicList, "DESC"); // client.describeTopics(topics)
+                                                       // client.describeConfigs(configList).all().get();
 
       ArrayList<String> delTopicList = new ArrayList<>();
       delTopicList.add("zero");
       deleteTopic(client, delTopicList); // client.deleteTopics(topics)
 
       //over kafka 2.0 client
-      ArrayList<String> consumerGroupList = consumerGroupList(client);
+      ArrayList<String> consumerGroupList = consumerGroupList(client); // client.listConsumerGroups().all().get();
 
       //admin client 테스트용 (미사용) consumerGroupDesc(client, consumerGroupList);
-      JsonObject consumerGroupPartitions = getConsumerGroupAssignedPartitions(client,"test11");
+      JsonObject consumerGroupPartitions = getConsumerGroupAssignedPartitions(client,"test11"); // client.describeConsumerGroups(consumerGroups).all().get();
+                                                                                                // client.listConsumerGroupOffsets(groupName);
 
       JsonObject config = new JsonObject();
       config.addProperty("bootstrapServer", brokerList);
       config.addProperty("groupName","test11");
-      getTopicOffsetInfo(config, consumerGroupPartitions);
+      getTopicOffsetInfo(config, consumerGroupPartitions); // consumer client
 
-      deleteConsumerGroup(client, "test11");
+      deleteConsumerGroup(client, "test11"); // client.deleteConsumerGroups(groupNames).all().get();
+
+      //kafka 1.1 broker 이상부터 가능
+      //alterReplicaLogDirs(client); // client.alterReplicaLogDirs(replicaAssignment).all().get();
+
+      //kafka 2.2 broker 이상부터 가능, 추후 고려
+      //electPreferredLeaders(client, topicList);
 */
 
-      getLogDirInfo(client);
-
-
-      //테스트 중
-      //alterReplicaLogDirs(client);
-
     //}
+
+    //getLogDirInfo(client); // client.describeLogDirs(asList(0,1,2));
 
     client.close();
   }
@@ -144,7 +149,7 @@ public class AdminClientTest {
   private static KafkaConsumer createKafkaConsumerClient(String bootstrapServer, String groupName) {
     Properties props = new Properties();
     props.put("bootstrap.servers", bootstrapServer);
-    props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
+    props.put("key.deserializer", "org.apache.kafka.common.serializati on.StringDeserializer");
     props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
     props.put("default.api.timeout.ms", timeout);
 
@@ -705,12 +710,10 @@ public class AdminClientTest {
     System.out.println("===== deleteConsumerGroup end =====");
   }
 
-
-
   public static void alterReplicaLogDirs(AdminClient client) {
-    System.out.println("===== alterReplicaLogDirs start ===== 잘안됨");
+    System.out.println("===== alterReplicaLogDirs start ===== kafka broker 1.1 이상부터 가능, 추후 고려");
     try {
-      TopicPartitionReplica tp = new TopicPartitionReplica("test12",4,2);
+      TopicPartitionReplica tp = new TopicPartitionReplica("test2",4,2);
       Map<TopicPartitionReplica, String> replicaAssignment = new HashMap<>();
       replicaAssignment.put(tp, "/tmp/kafka-logs31");
       client.alterReplicaLogDirs(replicaAssignment).all().get();
@@ -721,22 +724,18 @@ public class AdminClientTest {
     System.out.println("===== alterReplicaLogDirs end =====");
   }
 
-
-
-
-
-
-  public static void deleteTopic2(AdminClient client, ArrayList<String> topics) {
-    System.out.println("===== deleteTopic start =====");
+  public static void electPreferredLeaders(AdminClient client, ArrayList<String> topicPartitions) {
+    System.out.println("===== electPreferredLeaders start ===== kafka broker 2.2 이상부터 가능, 추후 고려");
     try {
-      DescribeTopicsResult descResult = client.describeTopics(topics);
-      Map<String,TopicDescription> resultMap = descResult.all().get();
+      ArrayList<TopicPartition> partitions = new ArrayList<>();
+      partitions.add(new TopicPartition("test2",1));
+      client.electPreferredLeaders(partitions).all().get();
     }catch (InterruptedException e) {
       e.printStackTrace();
     }catch (ExecutionException e) {
       //include timeout
       e.printStackTrace();
     }
-    System.out.println("===== deleteTopic end =====");
+    System.out.println("===== electPreferredLeaders end =====");
   }
 }

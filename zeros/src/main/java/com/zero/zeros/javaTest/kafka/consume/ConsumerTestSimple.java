@@ -38,7 +38,7 @@ public class ConsumerTestSimple {
 
 		try {
 			consumer = new KafkaConsumer<>(props);
-			consumer.subscribe(Arrays.asList("test2"));
+			consumer.subscribe(Arrays.asList("replica"));
 			while (true) {
 				//ConsumerRecords<String, String> records = consumer.poll(100);
 				ConsumerRecords<String,String> records = consumer.poll(Duration.ofMillis(pollTimeout)); //version 2.0 이상

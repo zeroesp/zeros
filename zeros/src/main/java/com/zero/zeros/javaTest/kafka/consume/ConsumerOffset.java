@@ -40,7 +40,7 @@ public class ConsumerOffset {
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
 		try {
-			String topicName = "test2";
+			String topicName = "replica";
 			//partition assign 및 offset 조회
 			Collection<TopicPartition> partitions = new ArrayList<>();
 
@@ -53,7 +53,8 @@ public class ConsumerOffset {
 			//partition assign
 			consumer.assign(partitions);
 
-			Thread.sleep(100);
+			//Thread.sleep(100);
+			consumer.assignment().forEach(v -> System.out.println("assignment : " + v));
 
 			//partition assign 및 offset 조회
 			Map<TopicPartition, Long> currentOffsets = new HashMap<>();

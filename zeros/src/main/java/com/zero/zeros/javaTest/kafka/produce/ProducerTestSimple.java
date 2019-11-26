@@ -31,7 +31,7 @@ public class ProducerTestSimple {
         String msg = "{\"Message\":" + i + ",\"host\":\"" + hosts[(int)Math.floor(Math.random()*4.9)] + "\",\"ip\":\""
             + ips[(int)Math.floor(Math.random()*9.9)] + "." + ips[(int)Math.floor(Math.random()*9.9)] + "."
             + ips[(int)Math.floor(Math.random()*9.9)] + "." + ips[(int)Math.floor(Math.random()*9.9)] + "\"}" ;
-        kafkaProcuder.send(new ProducerRecord<String, String>("test2", msg));
+        kafkaProcuder.send(new ProducerRecord<String, String>("replica", msg));
         System.out.println("Sent:" + msg);
         Thread.sleep(100);
       }
